@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Lato:wght@400;700&family=Pacifico&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #003459;
+  --hover: #0078cd;
+}
+
+.pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  font-family: 'Lato', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+/* ESTILOS DEL NAVBAR */
+.header {
+  display: flex;
+  width: 100%;
+  height: 6.25rem;
+  background-color: #fceed5;
+}
+
+.header__container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 87.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #fceed5;
+}
+
+.header__nav__list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0;
+  list-style: none;
+  gap: 3rem;
+}
+
+.header__nav__link {
+  color: var(--primary-color);
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header__nav__link--active {
+  color: var(--hover);
+}
+
+.header__nav__link:hover {
+  color: var(--hover);
+  transition: color 0.3s ease;
+}
+
+.header__button__item {
+  display: flex;
+  align-items: center;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  background-color: var(--primary-color);
+  border-radius: 4rem;
+  cursor: pointer;
+}
+
+.header__button__item:hover {
+  background-color: var(--hover);
+  transition: background-color 0.5s ease, transform 0.3s ease-in-out;
+}
+
+.header__button__link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ESTILOS DEL FOOTER */
+.footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 2rem;
+  background-color: #ddd;
+}
